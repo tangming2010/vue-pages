@@ -1,41 +1,11 @@
 <!DOCTYPE html>
-<html>
+ <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>首页</title>
-		<link rel="stylesheet" type="text/css" href="pagination/jquery.pagiination.css"/>
-		<script src="pagination/jquery-2.2.2.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="pagination/jquery.pagiination.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(function(){
-				var totalRecords = 360;
-				var pageSize = 10;
-				var pageNo = getParameter('pageNo'); //这里设置参数名(柯 乐 义 注 释)
-				if (!pageNo) {
-					pageNo = 1;
-				}
-				 //生成分页控件 根据分页的形式在这里设置
-				pager.init({
-					// 容器
-					pagerid: "pager",
-					// 页码
-					pno: pageNo,
-					//页大小
-					pageSize: 10,
-					//总数据条数
-					totalRecords: totalRecords,
-		/*			getLink: function (pageNo) {
-						return "index.html?pageNo=" + pageNo; //参数名跟上面相同
-					},*/
-					// 回掉函数
-					callback: function (pageNo) {
-						console.info(pageNo);
-					}
-				});
-			});
-		</script>
+	<meta charset="utf-8">
+	<title>pages</title>
 	</head>
 	<body>
-		<div id="pager"></div>
+	<app></app>
+	<!-- built files will be auto injected -->
 	</body>
-</html>
+ </html>
